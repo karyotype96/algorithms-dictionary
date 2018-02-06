@@ -14,5 +14,5 @@ Reverse array | A function to reverse the contents of an array: **<br/><br/> i =
 ### Sorting algorithms
 Algorithm | How it works | Time Complexity
 ----      | ----         | ----
-Selection Sort | Runs through the list several times. For every j in the list, it linearly searches ahead of j to find the smallest element, and once it finds it, j and the minimum element are swapped. | O(n^2)
-Insertion Sort | Heads forward in the list, and "slides the element back" to where it belongs in the sorted list. It does this by placing the element into a key variable, moving each element in the sorted list forward until the next sorted element is less than the key, and then placing the key there. | O(n^2)
+[Selection Sort](https://drive.google.com/file/d/1oZlZWhlLS7eeIzezMVogdiJnDj0YZ1qR/view?usp=sharing) | Runs through the list several times. For every j in the list, it linearly searches ahead of j to find the smallest element, and once it finds it, j and the minimum element are swapped. | O(n^2)
+[Insertion Sort](https://drive.google.com/file/d/1KSM3jL8kUbDxJHs9cp0FyTzAIpQWioyq/view?usp=sharing) | Heads forward in the list, and "slides the element back" to where it belongs in the sorted list. It does this by placing the element into a key variable, moving each element in the sorted list forward until the next sorted element is less than the key, and then placing the key there. | O(n^2)

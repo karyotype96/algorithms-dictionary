@@ -30,3 +30,9 @@ Finite automaton | A type of machine that can be in one of many finite states at
 Pushdown automaton | Similar to the above, with one exception - pushdown automata have memory. The memory is arranged according to a stack data structure, and data is pushed and popped according to the inputs. Before the automaton terminates, it must have an empty stack.
 Context-free grammar | A set of rules that define all possible strings in a formal language. This is done by replacing particular symbols with any of a set of symbols (which can include the symbol itself).
 Turing machine | A hypothetical machine consisting of a piece of tape with symbols written on it. The machine changes its own state, moves along the tape, and changes the symbols on it according to a set of defined rules.
+
+### Dynamic programming algorithms (examples pending)
+Algorithm | How it works
+----      | ----        
+Dijkstra's algorithm | An algorithm used to find the shortest path between two nodes on a network.
+Largest common substring | An algorithm that finds the largest possible string that can be made from the characters of two different strings, without changing the order.

@@ -21,7 +21,13 @@ Algorithm | How it works | Time Complexity
 [Insertion Sort](https://drive.google.com/file/d/1KSM3jL8kUbDxJHs9cp0FyTzAIpQWioyq/view?usp=sharing) | Heads forward in the list, and "slides the element back" to where it belongs in the sorted list. It does this by placing the element into a key variable, moving each element in the sorted list forward until the next sorted element is less than the key, and then placing the key there. Check the source for the implementation. | O(n<sup>2</sup>)
 Bubble Sort | Runs through the list several times, checking every two adjacent elements. Each time, if the left element is greater than the right, the elements are swapped. | O(n<sup>2</sup>)
 Merge Sort | Recursively divides the list into two groups, ending when the bottom level is reached. Then, the elements of every pair of groups is placed in order. | O(n log n)
-Quick Sort | Sets an element in the list as a pivot, and places all elements less than the pivot to the left of it and all elements greater to the right. This is then repeated recursively with each side. | O(n<sup>2</sup>)
+Quick Sort | Sets an element in the list as a pivot, and places all elements less than the pivot to the left of it and all elements greater to the right. This is then repeated recursively with each side. | O(n<sup>2</sup>) _note: worst-case scenario is rare, common-case scenario is O(n log n)_
+
+### Binary tree operations
+Algorithm | How it works | Time complexity
+----      | ----         | ----
+Insert leaf | Starting at the root node, check if the value to be inserted is less than the value of the current node. If it is, the function is recursively called again on the branch node to the left, and if not, the same is done to the right node. If the current node is NULL, set it to a node containing the value to insert. | O (log n)
+Delete leaf | Use binary search to find the node in the tree. If it's found, choose the minimum node in its subtree and replace the current node with it. | O(log n)
 
 ### Abstract machines
 Machine | How it works
@@ -36,3 +42,9 @@ Algorithm | How it works
 ----      | ----        
 Dijkstra's algorithm | An algorithm used to find the shortest path between two nodes on a network.
 Largest common substring | An algorithm that finds the largest possible string that can be made from the characters of two different strings, without changing the order.
+
+### Because I can...
+Algorithm | How it works | Time complexity
+----      | ----         | ----
+MD5 | An algorithm to generate a 128-bit cryptographic hash. The function divides a string of bits up into 512-bit blocks, then runs each block through 4 rounds of bit shifts and bitwise operations. The results of all four rounds applied to each block are appended together, thus generating a (pseudo)randomized hash. | O(n)
+Discrete Fourier transform | A function to transform a function of time into a function of frequency. When a digital signal **X** with **N** values is sent into the DFT function, the output for each frequency **k** is calculated as follows: for(t=0; t<N; t++), F(k) += X(t) * e^((-2 * pi * i * k * t) / N) | O(n^2)

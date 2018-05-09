@@ -36,7 +36,7 @@ Radix Sort | Sorts each number by digit. In LSD radix sort, it starts by sorting
 ### Binary tree operations
 Algorithm | How it works | Time complexity
 ----      | ----         | ----
-Insert leaf | Starting at the root node, check if the value to be inserted is less than the value of the current node. If it is, the function is recursively called again on the branch node to the left, and if not, the same is done to the right node. If the current node is NULL, set it to a node containing the value to insert. | O (log n)
+Insert leaf | Starting at the root node, check if the value to be inserted is less than the value of the current node. If it is, the function is recursively called again on the branch node to the left, and if not, the same is done to the right node. If the current node is NULL, set it to a node containing the value to insert. | O(log n)
 Delete leaf | Use binary search to find the node in the tree. If it's found, choose the minimum node in its subtree and replace the current node with it. | O(log n)
 Print tree in order | The function is called recursively for each node: First, the procedure calls itself for the node on the left of the current node. Then, it prints the value of the current node, unless it's NULL. Finally, it calls itself for the node on the right. | O(n)
 Find minimum | Traverse left through the tree until the next node is NULL, and the minimum is found. Maximum works the same way, except traversal happens to the right. | O(n)
@@ -59,7 +59,7 @@ Largest common substring | An algorithm that finds the largest possible string t
 Algorithm | How it works | Complexity
 ----      | ----         | ----
 Rotational cipher | Applies a "shift" to each letter - that is, if the shift is 1, A becomes B, B becomes C, and so on. | O(n)
-RSA | An asymmetric encryption algorithm that generates keys from large prime numbers, then generates private and public keys from those numbers. Correspondence is performed by keeping the private key secret, whereas the public key is known to both sides. | O(log n<sup>2</sup> 
+RSA | An asymmetric encryption algorithm that generates keys from large prime numbers, then generates private and public keys from those numbers. Correspondence is performed by keeping the private key secret, whereas the public key is known to both sides. | O(log n<sup>2</sup>)
 
 ### Because I can...
 Algorithm | How it works | Time complexity
